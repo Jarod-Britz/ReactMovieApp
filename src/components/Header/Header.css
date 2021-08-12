@@ -1,0 +1,74 @@
+.desktop {
+    width: 100%;
+    position: fixed;
+    background-color: #ffc100;
+    font-family: "Montserrat", sans-serif;
+    padding: 0 10px;
+    box-shadow: 0px 1px 5px black;
+    color: black;
+    z-index: 100;
+    display: inline-block;
+}
+
+.mobile {
+  display: none;
+}
+
+.desktop h1 {
+    float: left;
+    left: 5%;
+    line-height: 50px;
+    cursor: pointer;
+    margin-left: 4%;
+}
+
+.desktop .nav {
+  float: right;
+  margin-right: 5%;
+  width: 400px;
+}
+.desktop .nav li {
+  list-style-type: none;
+  display: inline;
+  margin: 0 2%;
+  font-size: 24px;
+  line-height: 60px;
+}
+
+.desktop .nav li a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.desktop .nav li a:hover {
+  color: rgba(0, 0, 0, 0.637);
+}
+
+
+  @media (max-width:  750px) {
+    .desktop {
+      display: none;
+  }
+  .mobile {
+    display: block;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: #ffc100;
+    box-shadow: 0px 1px 5px black;
+    color: white;
+    z-index: 100;
+    height: 50px;
+    display: inline-block;
+  }
+
+  .mobile .MuiButton-label {
+    line-height: 50px !important;
+  }
+
+  .mobile .button {
+    margin: 10%;
+    font-size: 30px;
+  }
+  }
